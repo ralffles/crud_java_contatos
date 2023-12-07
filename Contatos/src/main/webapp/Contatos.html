@@ -1,0 +1,64 @@
+<html>
+    <head>
+
+    <title>Contatos</title>
+    <img src="https://i.imgur.com/P8r09YJ.png" alt="Contatos" title="Contatos" style="margin: auto; display: block;" />
+	</head>
+        <meta charset="utf-8"/>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <style>
+            label {
+                width: 200px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="loading" style="display: none;">
+		</div>
+		
+		<div id="conteudo">
+        <input type="button" value="NOVO" onclick="novo()"/>
+        <div id="formulario" style="display: none;">
+            <label>
+                NOME: <input type="text" id="nome"/>
+            </label><br/>
+            <label>
+               ENDEREÇO: <input type="text" id="endereco"/>
+            </label><br/>
+            <label>
+                TELEFONE: <input type="text" id="telefone"/>
+            </label><br/>
+            <label>
+               EMAIL: <input type="text" id="email"/>
+            </label><br/>
+            <label>
+                RIOT ID:<input type="text" id="riotid"/>
+            </label><br/>
+            <input type="button" value="SALVAR" onclick="salvar()"/>
+            <input type="button" value="CANCELAR" onclick="cancelar()"/>
+        </div>
+        <div id="lista">
+            <table border="1" width="100%">
+                <thead>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>ENDEREÇO</th>
+                    <th>TELEFONE</th>
+                    <th>EMAIL</th>
+                    <th>RIOT ID</th>
+                    <th></th>
+                    <th></th>
+
+                </thead>
+                <tbody id="dados">
+
+                </tbody>
+            </table>
+       	 	</div>
+       	 </div>
+        
+        <script src="crud.js"></script>
+    </body>
+
+</html>
